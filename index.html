@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El clásico juego del tamagochi,
+    cuida tu mascota evitando que pierda su vitalidad, debes estar atento
+    de tres aspectos, la alimentación, su estado de ánimo, y de la limpieza">
+    <title>Tamagochi Game</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <span>Tamagochi</span>
+        <img src="images/tamagochi_image.png" class="icon" alt="Logo">
+        <div>Game</div>
+    </header>
+    <main>
+        <div class="mensaje-inicial">
+            <h1 id="mensaje-bienvenida">¡Bienvenido al juego del tamagochi!</h1>
+        </div>
+        
+        <section class="game-section">
+            <div class="pet-card">
+                <img src="images/cat-cartoon.gif" id="pet"alt="Pet">
+                <div class="health-container">
+                    <div class="health-title" id="health-main-title">Barras de vida mascota</div>
+                    <div class="health-title">Comida</div>
+                    <div class="health-bar">
+                        <div id="bar" class="bar">100</div>
+                    </div>
+                    <div class="health-title">Felicidad</div>
+                    <div class="health-bar">
+                        <div id="bar-2" class="bar">100</div>
+                    </div>
+                    <div class="health-title">Limpieza</div>
+                    <div class="health-bar">
+                        <div id="bar-3" class="bar">100</div>
+                    </div>
+                </div>
+                
+            </div>
+            <form class="form-container" onsubmit="changeName(event)">
+                <label for="name">
+                    <h2>Ingrese el nombre de su mascota:</h2>
+                </label>
+                <div class="input">
+                <input type="text" id="name" name="name" required>
+                <button type="submit">Iniciar Juego</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        @Copyright
+        <br>
+        By: Juan Camilo Gutierrez Martinez
+        <br>
+        <a href="https://github.com/Camilog2004" target="_blank">Github Personal</a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
